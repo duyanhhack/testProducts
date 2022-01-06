@@ -1,7 +1,7 @@
-const listUl = document.querySelector('.product-container ul')
+const listUl = document.querySelector('.products--list ul')
 
 let i=0;
-Products.forEach((product) => {
+Products.forEach(() => {
     i++;
 })
 if(i<=4){
@@ -12,13 +12,13 @@ if(i<=4){
             <a href="">
                 <img src="${product.image}" alt="">
                 <p>${product.name}</p>
-                <p>${product.price}</p>
+                <p>${product.price.toLocaleString()} Đ</p>
             </a>
         </li>
         `
     });
 } else {
-    const createUl = document.querySelector('.product-container')
+    const createUl = document.querySelector('.products--list')
     createUl.innerHTML += `<ul class="list"></ul>`
     const listProduct = document.getElementsByClassName('list') // return Array
     let x = 0;
@@ -26,7 +26,7 @@ if(i<=4){
         if(product.tag == '#food'){
             x = 0;
         }
-        else if (product.tag == '#drink'){
+        else if (product.tag == '#drink' && product.tag != '#beer'){
             x = 1;
         }
         listProduct[x].innerHTML +=
@@ -35,7 +35,7 @@ if(i<=4){
             <a href="" tag-name="${product.tag}">
                 <img src="${product.image}" alt="">
                 <p>${product.name}</p>
-                <p>${product.price}</p>
+                <p>${product.price.toLocaleString()} Đ</p>
             </a>
         </li>
         `

@@ -13,7 +13,7 @@ Products.forEach((product) => {
     listProduct.innerHTML +=
     `
     <li>
-        <a href="">
+        <a href="#">
             <img src="${product.image}" alt="">
             <p>${product.name}</p>
             <p>${product.price}</p>

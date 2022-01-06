@@ -8,15 +8,375 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="product-container">
-            <ul id="list">
-
+    <header>
+        <div class="menu-desktop">
+            <ul class="menu__side side--left">
+                <li class="red"></li>
+                <li class="yellow"></li>
             </ul>
-            
+
+            <div class="main-menu">
+                <a href="index.html"><img src="./images/Logo.png" alt=""></a>
+                <ul class="menu--items">
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/sanpham.png" alt="">
+                            <span>Sản phẩm</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/anuong.png" alt="">
+                            <span>Ăn & uống</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/uudai.png" alt="">
+                            <span>Ưu đãi</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/timcuahang.png" alt="">
+                            <span>Tìm cửa hàng</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/menu/vieclam.png" alt="">
+                            <span>Việc làm</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="frame">
+                    <input type="text" placeholder="Địa chỉ nhận hàng">
+                    <button class="btn-icon btn-icon--red"><img src="./images/menu/location.png" alt=""></button>
+                    <button class="btn-icon"><img src="./images/menu/clarity_search.png" alt=""></button>
+                    <button class="btn-icon"><img src="./images/menu/user.png" alt=""></button>
+                    <button class="btn-icon"><img src="./images/menu/cart.png" alt=""></button>
+                    
+                    <div class="language">
+                        <button class="language__btn active">VI</button>
+                        <button class="language__btn">ENG</button>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="menu__side side--right">
+                <li class="red"></li>
+                <li class="yellow"></li>
+            </ul>
         </div>
+    </header>
+
+    <div class="side-control">
+        <ul class="list--vertical">
+            <li>
+                <button class="btn-icon">
+                    <img src="./images/side-option/clarity_phone-handset-line.png" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="btn-icon">
+                    <img src="./images/side-option/bi_chat.png" alt="">
+                </button>
+            </li>
+            <li>
+                <button class="btn-icon">
+                    <img src="./images/side-option/akar-icons_arrow-up.png" alt="">
+                </button>
+            </li>
+        </ul>
     </div>
 
+    <main>
+        <div class="slider slider__top">
+            <div id="slider--top" class="owl-carousel owl-theme">
+                <div class="item"><a href=""><img src="./images/slider-img2.png" alt=""></a></div>
+                <div class="item"><a href=""></a></div>
+            </div>
+        </div>
+
+        <div class="products-selector">
+            <ul class="menu--items prod__items">
+                <li>
+                    <a href="#">
+                        <span class="product__icon">
+                            <img src="./images/first-selector/khuyenmai.png" alt="">
+                        </span>
+                        <span class="product__title">Hàng khuyến mãi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="product__icon">
+                            <img src="./images/first-selector/nuoc.png" alt="">
+                        </span>
+                        <span class="product__title">Nước giải khát</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="product__icon">
+                            <img src="./images/first-selector/snack.png" alt="">
+                        </span>
+                        <span class="product__title">Snack & bánh kẹo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="product__icon">
+                            <img src="./images/first-selector/milk-product.png" alt="">
+                        </span>
+                        <span class="product__title">Sữa & các sp từ sữa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="product__icon">
+                            <img src="./images/first-selector/thucpham.png" alt="">
+                        </span>
+                        <span class="product__title">Thực phẩm khô</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="product__icon">
+                            <img src="./images/first-selector/skincare.png" alt="">
+                        </span>
+                        <span class="product__title">Sức khỏe & làm đẹp</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="product__icon">
+                            <img src="./images/first-selector/detergent.png" alt="">
+                        </span>
+                        <span class="product__title">Đồ dùng gia đình</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="product__icon">
+                            <img src="./images/first-selector/small-logo.png" alt="">
+                        </span>
+                        <span class="product__title">Tham gia CK Club</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="products-container">
+            <h2 class="title">sản phẩm mới</h2>
+
+            <div class="products--list">
+                <ul class="list">
+                    <!--
+                        if use app.js -> class="list"
+                        if use app2.js -> id="list"
+                    -->
+                </ul>
+            </div>
+
+            <a href="" class="btn btn__more">xem thêm sản phẩm<img src="./images/arrow-right.png" alt=""></a>
+        </div>
+
+        <div class="slider">
+            <div id="slider--bottom" class="owl-carousel owl-theme">
+                <div class="item"><a href=""><img src="./images/slider-img3.png"></a></div>
+                <div class="item"><a href=""><img src="./images/slider-img4.png"></a></div>
+            </div>
+        </div>
+
+        <div class="services">
+            <h2 class="title">dịch vụ tiện ích</h2>
+
+            <div class="service--list">
+                <ul class="list">
+                    <li>
+                        <a href="#">
+                            <span><img src="./images/second-selector/visa.png" alt=""></span>
+                            <span>Thanh toán bằng thẻ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><img src="./images/second-selector/hoadon.png" alt=""></span>
+                            <span>Thanh toán hóa đơn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><img src="./images/second-selector/game.png" alt=""></span>
+                            <span>Thẻ game</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><img src="./images/second-selector/phone-card.png" alt=""></span>
+                            <span>Thẻ điện thoại</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><img src="./images/second-selector/giatla.png" alt=""></span>
+                            <span>Giặt là</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><img src="./images/second-selector/atm.png    " alt=""></span>
+                            <span>ATM</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="news">
+            <h2 class="title">sự kiện và tin tức</h2>
+
+            <div class="news--list">
+                <ul class="list">
+                    <li>
+                        <a href="#">
+                            <img src="./images/news/news-1.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/news/news-2.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/news/news-3.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="" class="btn btn__more">xem tất cả tin tức<img src="./images/arrow-right.png" alt=""></a>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="form">
+            <div class="form--logo">
+                <img src="./images/Logo.png" alt="logo" class="logo">
+            </div>
+            <div class="form--followus">
+                <span class="highlight">theo dõi circle k</span>
+                <span class="nomal">Cập nhật ưu đã sớm nhất</span>
+            </div>
+            <div class="form--email">
+                <input type="email" id="email" placeholder="Nhập email của bạn">
+                <a class="btn">xác nhận</a>
+            </div>
+            <div class="form--social">
+                <ul class="list">
+                    <li>
+                        <a href="">
+                            <span class="btn-icon btn-social">
+                                <img src="./images/footer/facebook.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="btn-icon btn-social">
+                                <img src="./images/footer/youtube.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="btn-icon btn-social">
+                                <img src="./images/footer/mail.png" alt="">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="title title__footer"><span class="title__bold">circle k vietnam -</span> chuỗi cửa hàng tiện lợi - mở cửa 24/7</h2>
+
+        <div class="infomation">
+            <div class="infomation--left">
+                <ul class="list list__info">
+                    <li class="-name">
+                        <span class="uppercase">công ty vòng tròn đỏ </span>
+                        - Giấy CNĐKDN: 0306182043
+                    </li>
+                    <li class="-address">
+                        Địa chỉ: 160 Bùi Thị Xuân, phường Phạm Ngũ Lão, quận 1, Tp.Hồ Chí Minh, Việt Nam
+                    </li>
+                    <li class="-hotline">
+                        Hotline: 1900 3110 (7:00-22:00)
+                    </li>
+                    <li class="-email">
+                        Email: info@circle.com.vn
+                    </li>
+                </ul>
+            </div>
+
+            <div class="infomation--right">
+                <ul class="infomation--link">
+                    <li class="link--desktop">
+                        <img src="./images/footer/dathongbao.png" alt="">
+                    </li>
+                    <li class="link--qrcode">
+                        <img src="./images/footer/qr-code.png" alt="">
+                    </li>
+                    <li class="link--download">
+                        <ul class="download">
+                            <li>
+                                <a href="#">
+                                    <img src="./images/footer/app-store.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/footer/google-play.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="link--mobile">
+                        <img src="./images/footer/dathongbao.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="links">
+            <ul class="list links__footer">
+                <li>
+                   <a href="#">Giới thiệu</a> 
+                </li>
+                <li>
+                    <a href="#">Cơ hội nghề nghiệp</a> 
+                 </li>
+                 <li>
+                    <a href="#">Tin tức & sự kiện</a> 
+                 </li>
+                 <li>
+                    <a href="#">Liên hệ</a> 
+                 </li>
+                 <li>
+                    <a href="#">Điều khoản sử dụng</a> 
+                 </li>
+                 <li>
+                    <a href="#">Chính sách bảo mật</a> 
+                 </li>
+            </ul>
+            <p class="link--copyright">copyright © 2021 circle k vietnam</p>
+        </div>
+    </footer>
     <script src="./data.js"></script>
     <script src="./app.js"></script>
 

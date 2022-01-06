@@ -11,13 +11,12 @@ ul li {
 }
 ul {
     padding: 0;
-
 }
-.product-container {
+.products--list {
     max-width: 100%;
 }
 
-.product-container ul {
+.products--list ul {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
