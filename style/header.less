@@ -1,0 +1,91 @@
+@import "./style.less";
+@import "./variables.less";
+
+header {
+    width: 100%;
+    height: 80px;
+}
+.menu-desktop {
+    display: flex;
+    background-color: white;
+    background-image: url('../images/bg-menu.png');
+    background-repeat: repeat-x;
+    background-clip: border-box;
+    background-size: auto;
+    width: 100%;
+    height: 80px;
+    .shadow-box();
+    position: fixed;
+    z-index: 10;
+}
+.menu__main {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    max-width: 1200px;
+    width: 100%;
+    height: 80px;
+    justify-content: space-between;
+    a {
+        margin: 0;
+        img {
+            height: 100%;
+        }
+    }
+    .menu__actions {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    ul {
+        margin: 0;
+        li{
+            padding-right: 20px;
+            a {
+                display: flex;
+                flex-direction: column;
+                span {
+                    .font-custom();
+                    transition: 0.3s;
+                }
+                &:hover {
+                    span {
+                        .font-custom(@color: @primary-color);
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+.menu__main ul{
+    .list-horizontal();
+    // li a:hover {
+    //     .font-cus
+    // }
+}
+.address-order {
+    .input();
+    margin-right: 10px;
+}
+.btn-icon {
+    #btn(@padding: 0, @margin: 0 10px 0 10px);
+}
+.btn-icon--red {
+    #btn(@bg: @primary-color, @width: 40px, @height: 40px, @padding: 0, @margin: 0 10px 0 10px);
+}
+.languages {
+    display: flex;
+    padding: 0 16px 0 5px;
+    .language__btn {
+        #btn(@width: auto, @height: auto, @padding: 0 5px 0 5px);
+        .font-custom(@weight: 300);
+        &:last-child {
+            border-left: 1px solid @color-black;
+            border-radius: 0;
+        }
+        &.active {
+            .font-custom(@weight: 500, @color: @primary-color)
+        }
+    }
+}

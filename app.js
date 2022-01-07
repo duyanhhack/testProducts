@@ -1,4 +1,4 @@
-const listUl = document.querySelector('.products--list ul')
+const listUl = document.querySelector('.products__list ul')
 
 let i=0;
 Products.forEach(() => {
@@ -11,19 +11,19 @@ if(i<=4){
         <li>
             <a href="">
                 <img src="${product.image}" alt="">
-                <p>${product.name}</p>
-                <p>${product.price.toLocaleString()} Đ</p>
+                <p class="product__name">${product.name}</p>
+                <p class="product__price">${product.price.toLocaleString('de-DE')} Đ</p>
             </a>
         </li>
         `
     });
 } else {
-    const createUl = document.querySelector('.products--list')
-    createUl.innerHTML += `<ul class="list"></ul>`
-    const listProduct = document.getElementsByClassName('list') // return Array
+    const createUl = document.querySelector('.products__list')
+    createUl.innerHTML += `<ul class="list__product"></ul>`
+    const listProduct = document.getElementsByClassName('list__product') // return Array
     let x = 0;
     Products.forEach((product) => {
-        if(product.tag == '#food'){
+        if(product.tag == '#food' && product.tag != '#beer'){
             x = 0;
         }
         else if (product.tag == '#drink' && product.tag != '#beer'){
@@ -34,11 +34,34 @@ if(i<=4){
         <li>
             <a href="" tag-name="${product.tag}">
                 <img src="${product.image}" alt="">
-                <p>${product.name}</p>
-                <p>${product.price.toLocaleString()} Đ</p>
+                <p class="product__name">${product.name}</p>
+                <p class="product__price">${product.price.toLocaleString('de-DE')} Đ</p>
             </a>
         </li>
         `
     });
 }
 
+$(document).ready(function() {
+    $('#slider--top').owlCarousel({
+        loop: true,
+        items:1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        smartSpeed: 1000,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+    });
+
+    $('#slider--bottom').owlCarousel({
+        loop: true,
+        items:1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        smartSpeed: 1000,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: false,
+    });
+})
