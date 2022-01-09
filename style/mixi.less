@@ -1,0 +1,49 @@
+@import "./variables.less";
+
+.font-custom(@size: @font-s-medium, @weight: @font-w-medium, @color: @color-black, @line-height: @line-height-small) {
+    font-weight: @weight;
+    font-size: @size;
+    color: @color;
+    line-height: @line-height;
+}
+.font-primary-red{
+    .font-custom(@font-size-primary, @font-weight-primary, @primary-color);
+}
+.font-primary-black {
+    .font-custom(@font-size-primary, @font-weight-primary, @color-black);
+}
+.font-primary-white {
+    .font-custom(@font-size-primary, @font-weight-primary, @color-white);
+}
+
+#btn(@bg: none, @border: none, @width: auto, @height: auto, @padding: auto, @margin: auto, @radius: @radius-normal) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: @bg;
+    border: @border;
+    border-radius: @radius;
+    padding: @padding;
+    margin: @margin;
+    width: @width;
+    height: @height;
+    cursor: pointer;
+}
+.shadow-box(@attributes: 0px 0px 10px rgba(0, 0, 0, 0.15)) {
+    -webkit-box-shadow: @attributes;
+    -moz-box-shadow: @attributes;
+    box-shadow: @attributes;
+}
+#title(@text-trans: uppercase, @padding: 0 0 10px 0, @border: 3px solid @primary-color){
+    text-transform: @text-trans;
+    width: fit-content;
+    text-align: center;
+    padding: @padding;
+    border-bottom: @border;
+}
+.ul-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}

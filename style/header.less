@@ -1,5 +1,4 @@
 @import "./style.less";
-@import "./variables.less";
 
 header {
     width: 100%;
@@ -32,11 +31,6 @@ header {
             height: 100%;
         }
     }
-    .menu__actions {
-        display: flex;
-        align-items: center;
-        margin: 0;
-    }
     ul {
         margin: 0;
         li{
@@ -45,6 +39,7 @@ header {
                 display: flex;
                 flex-direction: column;
                 span {
+                    margin-top: 5px;
                     .font-custom();
                     transition: 0.3s;
                 }
@@ -57,12 +52,14 @@ header {
             }
         }
     }
+    .menu__actions {
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
 }
 .menu__main ul{
-    .list-horizontal();
-    // li a:hover {
-    //     .font-cus
-    // }
+    display: flex;
 }
 .address-order {
     .input();

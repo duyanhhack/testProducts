@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Circle K</title>
     <link rel="stylesheet/less" type="text/css" href="./style/style.less" />
-    <link rel="stylesheet/less" type="text/css" href="./style/header.less" />
-    <link rel="stylesheet/less" type="text/css" href="./style/footer.less" />
     <link rel="stylesheet" href="./owl/owl.carousel.css">
     <link rel="stylesheet" href="./owl/owl.theme.default.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -186,323 +184,312 @@
         </div>
     </header>
 
-    <main>
-        <div class="slider-top">
-            <div id="slider--top" class="owl-carousel owl-theme">
-                <div class="item"><a href="#"><img src="./images/slider-img1.png"></a></div>
-                <div class="item"><a href="#"><img src="./images/slider-img2.png"></a></div>
-                <div class="item"><a href="#"><img src="./images/slider-img3.png"></a></div>
-                <div class="item"><a href="#"><img src="./images/slider-img4.png"></a></div>
-            </div>
+    <div class="slider-top">
+        <div id="slider--top" class="owl-carousel owl-theme">
+            <div class="item"><a href="#"><img src="./images/slider-img1.png"></a></div>
+            <div class="item"><a href="#"><img src="./images/slider-img2.png"></a></div>
+            <div class="item"><a href="#"><img src="./images/slider-img3.png"></a></div>
+            <div class="item"><a href="#"><img src="./images/slider-img4.png"></a></div>
+        </div>
+    </div>
+
+    <div class="category-selector">
+        <ul>
+            <li>
+                <a href="#">
+                    <span>
+                        <img src="./images/first-selector/khuyenmai.png" alt="">
+                    </span>
+                    <span>Hàng<br/>khuyến mãi</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <img src="./images/first-selector/nuoc.png" alt="">
+                    </span>
+                    <span>Nước<br/>giải khát</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <img src="./images/first-selector/snack.png" alt="">
+                    </span>
+                    <span>Snack<br/>& bánh kẹo</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <img src="./images/first-selector/milk-product.png" alt="">
+                    </span>
+                    <span>Sữa & các sp<br/>từ sữa</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <img src="./images/first-selector/thucpham.png" alt="">
+                    </span>
+                    <span>Thực phẩm<br/>khô</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <img src="./images/first-selector/skincare.png" alt="">
+                    </span>
+                    <span>Sức khỏe<br/>& làm đẹp</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <img src="./images/first-selector/detergent.png" alt="">
+                    </span>
+                    <span>Đồ dùng<br/>gia đình</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <img src="./images/first-selector/small-logo.png" alt="">
+                    </span>
+                    <span>Tham gia<br/>CK Club</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="products-container">
+        <h2>sản phẩm mới</h2>
+
+        <div class="products__list">
+            <ul class="list__product">
+                <!--
+                    if use app.js -> class="list__product"
+                    if use app2.js -> id="list__product"
+                -->
+            </ul>
         </div>
 
-        <div class="container">
-            <div class="category-selector">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span class="_icon">
-                                <img src="./images/first-selector/khuyenmai.png" alt="">
-                            </span>
-                            <span class="_title">Hàng<br/>khuyến mãi</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon">
-                                <img src="./images/first-selector/nuoc.png" alt="">
-                            </span>
-                            <span class="_title">Nước<br/>giải khát</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon">
-                                <img src="./images/first-selector/snack.png" alt="">
-                            </span>
-                            <span class="_title">Snack<br/>& bánh kẹo</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon">
-                                <img src="./images/first-selector/milk-product.png" alt="">
-                            </span>
-                            <span class="_title">Sữa & các sp<br/>từ sữa</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon">
-                                <img src="./images/first-selector/thucpham.png" alt="">
-                            </span>
-                            <span class="_title">Thực phẩm<br/>khô</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon">
-                                <img src="./images/first-selector/skincare.png" alt="">
-                            </span>
-                            <span class="_title">Sức khỏe<br/>& làm đẹp</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon">
-                                <img src="./images/first-selector/detergent.png" alt="">
-                            </span>
-                            <span class="_title">Đồ dùng<br/>gia đình</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon">
-                                <img src="./images/first-selector/small-logo.png" alt="">
-                            </span>
-                            <span class="_title">Tham gia<br/>CK Club</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <a href="" class="btn-more-products">xem thêm sản phẩm<span class="btn--img"></span></a>
+    </div>
 
-            <div class="products-container">
-                <h2 class="title">sản phẩm mới</h2>
-
-                <div class="products__list">
-                    <ul class="list__product">
-                        <!--
-                            if use app.js -> class="list__product"
-                            if use app2.js -> id="list__product"
-                        -->
-                    </ul>
-                </div>
-
-                <a href="" class="btn-more-products">xem thêm sản phẩm<span class="btn--img"></span></a>
-            </div>
+    <div class="slider-bottom">
+        <div id="slider--bottom" class="owl-carousel owl-theme">
+            <div class="item"><a href="#"><img src="./images/slider-img3.png"></a></div>
+            <div class="item"><a href="#"><img src="./images/slider-img4.png"></a></div>
+            <div class="item"><a href="#"><img src="./images/slider-img2.png"></a></div>
+            <div class="item"><a href="#"><img src="./images/slider-img1.png"></a></div>
         </div>
-        <div class="slider-bottom">
-            <div id="slider--bottom" class="owl-carousel owl-theme">
-                <div class="item"><a href="#"><img src="./images/slider-img3.png"></a></div>
-                <div class="item"><a href="#"><img src="./images/slider-img4.png"></a></div>
-                <div class="item"><a href="#"><img src="./images/slider-img2.png"></a></div>
-                <div class="item"><a href="#"><img src="./images/slider-img1.png"></a></div>
-            </div>
+    </div>
+
+    <div class="services">
+        <h2>dịch vụ tiện ích</h2>
+
+        <div class="service__list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span><img src="./images/second-selector/visa.png" alt=""></span>
+                        <span>Thanh toán<br/>bằng thẻ</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="./images/second-selector/hoadon.png" alt=""></span>
+                        <span>Thanh toán<br/>hóa đơn</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="./images/second-selector/game.png" alt=""></span>
+                        <span>Thẻ game</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="./images/second-selector/phone-card.png" alt=""></span>
+                        <span>Thẻ điện thoại</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="./images/second-selector/giatla.png" alt=""></span>
+                        <span>Giặt là</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span><img src="./images/second-selector/atm.png    " alt=""></span>
+                        <span>ATM</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="" class="btn-more-service">xem thêm dịch vụ<span class="btn--img"></span></a>
+    </div>
+
+    <div class="news">
+        <h2>sự kiện và tin tức</h2>
+
+        <div class="news__list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/news/news-1.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/news/news-2.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/news/news-3.png" alt="">
+                    </a>
+                </li>
+            </ul>
         </div>
 
-        <div class="services">
-            <h2 class="title">dịch vụ tiện ích</h2>
-
-            <div class="service__list">
-                <ul>
-                    <li>
-                        <a href="#">
-                            <span class="_icon"><img src="./images/second-selector/visa.png" alt=""></span>
-                            <span class="_title">Thanh toán<br/>bằng thẻ</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon"><img src="./images/second-selector/hoadon.png" alt=""></span>
-                            <span class="_title">Thanh toán<br/>hóa đơn</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon"><img src="./images/second-selector/game.png" alt=""></span>
-                            <span class="_title">Thẻ game</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon"><img src="./images/second-selector/phone-card.png" alt=""></span>
-                            <span class="_title">Thẻ điện thoại</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon"><img src="./images/second-selector/giatla.png" alt=""></span>
-                            <span class="_title">Giặt là</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <span class="_icon"><img src="./images/second-selector/atm.png    " alt=""></span>
-                            <span class="_title">ATM</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <a href="" class="btn-more-service">xem thêm dịch vụ<span class="btn--img"></span></a>
-        </div>
-
-        <div class="container">
-            <div class="news">
-                <h2 class="title">sự kiện và tin tức</h2>
-
-                <div class="news__list">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="./images/news/news-1.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/news/news-2.png" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="./images/news/news-3.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <a href="" class="btn-more-news">xem tất cả tin tức<span class="btn--img"></span></a>
-            </div>
-        </div>
-    </main>
+        <a href="" class="btn-more-news">xem tất cả tin tức<span class="btn--img"></span></a>
+    </div>
 
     <footer>
-        <div class="container">
-            <div class="form">
-                <div class="form__logo">
-                    <svg width="159" height="61" viewBox="0 0 159 61" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M152.547 56.5087H151.515V55.9995H154.112V56.5087H153.081V59.8492H152.547V56.5087ZM154.858 55.9995H155.442L156.56 57.9864L157.679 55.9995H158.25V59.8492H157.728V56.9061L156.585 58.955H156.523L155.379 56.9061V59.8492H154.858L154.858 55.9995Z" fill="#EE2E24"/>
-                        <path d="M149.776 0.669922H0V60.6699H149.776V0.669922Z" fill="white"/>
-                        <path d="M148.926 1.52002H0.850006V50.1025H148.926V1.52002Z" fill="#EE2E24"/>
-                        <path d="M148.926 52.532H0.850006V59.8198H148.926V52.532Z" fill="#F99B2A"/>
-                        <path d="M31.9592 18.5927H36.617V36.6789H31.9592V18.5927ZM44.7345 27.8844C46.5763 27.8844 47.8912 26.9785 47.8912 25.0992C47.8912 23.2587 46.6543 22.4306 44.7633 22.4306H43.4288V27.8844H44.7345ZM76.9907 32.5586H83.2569V36.6789H72.2647V18.5927H76.9907V32.5586ZM84.7677 18.5927H96.6657V22.7033H89.4256V25.7026H96.3446V29.501H89.4256V32.5586H96.6855V36.6789H84.7677V18.5927ZM125.073 27.2897L131.495 18.5927H124.898L118.953 26.9197V18.5927H113.183V36.6789H118.953V28.3519L129.215 41.5779C126.553 43.2076 123.487 44.058 120.366 44.0326C118.199 44.076 116.045 43.6814 114.035 42.8725C112.024 42.0636 110.197 40.857 108.665 39.3253C107.132 37.7935 105.925 35.9681 105.115 33.9585C104.306 31.949 103.911 29.7967 103.955 27.6309C103.965 23.2877 105.698 19.1258 108.775 16.0583C111.851 12.9908 116.02 11.2681 120.365 11.2681C124.711 11.2681 128.879 12.9908 131.956 16.0583C135.032 19.1258 136.766 23.2877 136.776 27.6309C136.807 31.2963 135.621 34.8687 133.405 37.7891L125.073 27.2897ZM52.511 24.5728C52.5481 25.6789 52.2472 26.77 51.6483 27.7009C51.0494 28.6318 50.181 29.3583 49.1587 29.7837L53.7688 36.6789H48.2717L43.4288 29.1017V36.6789H38.771V18.5927H44.5886C49.6755 18.5927 52.511 20.5994 52.511 24.5728ZM22.6134 22.5474C21.953 22.5455 21.299 22.677 20.6908 22.9341C20.0825 23.1911 19.5325 23.5683 19.0737 24.0431C18.615 24.5179 18.257 25.0805 18.0213 25.697C17.7855 26.3135 17.6769 26.9713 17.7019 27.6309C17.6761 28.2907 17.7841 28.9489 18.0195 29.5658C18.255 30.1828 18.6129 30.7458 19.0718 31.2208C19.5307 31.6959 20.081 32.0732 20.6897 32.33C21.2984 32.5869 21.9527 32.7179 22.6134 32.7153C23.5033 32.7118 24.377 32.4774 25.1491 32.0353C25.9212 31.5931 26.5652 30.9583 27.0183 30.1928L30.6138 32.5402C29.7706 33.925 28.5794 35.0652 27.1588 35.8476C25.7381 36.63 24.1374 37.0273 22.5155 37C21.2734 37.0184 20.0399 36.7898 18.887 36.3275C17.7341 35.8651 16.6846 35.1783 15.7997 34.3069C14.9148 33.4355 14.212 32.3969 13.7324 31.2516C13.2527 30.1063 13.0057 28.8771 13.0057 27.6356C13.0057 26.394 13.2527 25.1648 13.7324 24.0195C14.212 22.8742 14.9148 21.8357 15.7997 20.9643C16.6846 20.0929 17.7341 19.406 18.887 18.9437C20.0399 18.4813 21.2734 18.2527 22.5155 18.2711C24.144 18.2258 25.7555 18.612 27.1864 19.3904C28.6172 20.1688 29.8165 21.3118 30.6624 22.7033L26.978 25.1187C26.5475 24.3387 25.9153 23.6886 25.1475 23.2363C24.3797 22.784 23.5044 22.5461 22.6131 22.5475L22.6134 22.5474ZM63.0463 22.5474C62.3859 22.5454 61.7318 22.6769 61.1235 22.9339C60.5151 23.1909 59.9651 23.5681 59.5063 24.0429C59.0475 24.5177 58.6894 25.0803 58.4537 25.6969C58.2179 26.3134 58.1092 26.9713 58.1342 27.6309C58.1084 28.2907 58.2165 28.949 58.4519 29.566C58.6874 30.183 59.0454 30.746 59.5043 31.221C59.9633 31.6961 60.5137 32.0734 61.1224 32.3302C61.7311 32.587 62.3856 32.718 63.0463 32.7153C63.9361 32.7118 64.8097 32.4774 65.5817 32.0353C66.3536 31.5931 66.9976 30.9582 67.4505 30.1928L71.0467 32.5402C69.9688 34.2541 68.3615 35.5703 66.4682 36.2897C64.5749 37.0091 62.4986 37.0925 60.5536 36.5272C58.6087 35.9619 56.9009 34.7788 55.6889 33.1568C54.4769 31.5349 53.8266 29.5624 53.8364 27.5381C53.8462 25.5138 54.5157 23.5478 55.7434 21.9376C56.9711 20.3275 58.6903 19.161 60.6406 18.6146C62.591 18.0682 64.6664 18.1717 66.5526 18.9094C68.4389 19.6472 70.0333 20.979 71.0945 22.7033L67.4113 25.1187C66.9807 24.3388 66.3485 23.6887 65.5807 23.2364C64.8128 22.7841 63.9376 22.5462 63.0463 22.5474Z" fill="white"/>
-                    </svg>                        
-                </div>
-                <div class="form__followus">
-                    <span class="highlight">theo dõi circle k</span>
-                    <span class="nomal">Cập nhật ưu đã sớm nhất</span>
-                </div>
-                <div class="form__email">
-                    <input type="email" id="email" placeholder="Nhập email của bạn">
-                    <a class="btn-submit">xác nhận</a>
-                </div>
-                <div class="form__social">
-                    <ul>
-                        <li>
-                            <a href="">
-                                <span class="_icon">
-                                    <img src="./images/footer/facebook.png" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="_icon">
-                                    <img src="./images/footer/youtube.png" alt="">
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="_icon">
-                                    <img src="./images/footer/email.png" alt="">
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+        <div class="form">
+            <div class="form__logo">
+                <svg width="159" height="61" viewBox="0 0 159 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M152.547 56.5087H151.515V55.9995H154.112V56.5087H153.081V59.8492H152.547V56.5087ZM154.858 55.9995H155.442L156.56 57.9864L157.679 55.9995H158.25V59.8492H157.728V56.9061L156.585 58.955H156.523L155.379 56.9061V59.8492H154.858L154.858 55.9995Z" fill="#EE2E24"/>
+                    <path d="M149.776 0.669922H0V60.6699H149.776V0.669922Z" fill="white"/>
+                    <path d="M148.926 1.52002H0.850006V50.1025H148.926V1.52002Z" fill="#EE2E24"/>
+                    <path d="M148.926 52.532H0.850006V59.8198H148.926V52.532Z" fill="#F99B2A"/>
+                    <path d="M31.9592 18.5927H36.617V36.6789H31.9592V18.5927ZM44.7345 27.8844C46.5763 27.8844 47.8912 26.9785 47.8912 25.0992C47.8912 23.2587 46.6543 22.4306 44.7633 22.4306H43.4288V27.8844H44.7345ZM76.9907 32.5586H83.2569V36.6789H72.2647V18.5927H76.9907V32.5586ZM84.7677 18.5927H96.6657V22.7033H89.4256V25.7026H96.3446V29.501H89.4256V32.5586H96.6855V36.6789H84.7677V18.5927ZM125.073 27.2897L131.495 18.5927H124.898L118.953 26.9197V18.5927H113.183V36.6789H118.953V28.3519L129.215 41.5779C126.553 43.2076 123.487 44.058 120.366 44.0326C118.199 44.076 116.045 43.6814 114.035 42.8725C112.024 42.0636 110.197 40.857 108.665 39.3253C107.132 37.7935 105.925 35.9681 105.115 33.9585C104.306 31.949 103.911 29.7967 103.955 27.6309C103.965 23.2877 105.698 19.1258 108.775 16.0583C111.851 12.9908 116.02 11.2681 120.365 11.2681C124.711 11.2681 128.879 12.9908 131.956 16.0583C135.032 19.1258 136.766 23.2877 136.776 27.6309C136.807 31.2963 135.621 34.8687 133.405 37.7891L125.073 27.2897ZM52.511 24.5728C52.5481 25.6789 52.2472 26.77 51.6483 27.7009C51.0494 28.6318 50.181 29.3583 49.1587 29.7837L53.7688 36.6789H48.2717L43.4288 29.1017V36.6789H38.771V18.5927H44.5886C49.6755 18.5927 52.511 20.5994 52.511 24.5728ZM22.6134 22.5474C21.953 22.5455 21.299 22.677 20.6908 22.9341C20.0825 23.1911 19.5325 23.5683 19.0737 24.0431C18.615 24.5179 18.257 25.0805 18.0213 25.697C17.7855 26.3135 17.6769 26.9713 17.7019 27.6309C17.6761 28.2907 17.7841 28.9489 18.0195 29.5658C18.255 30.1828 18.6129 30.7458 19.0718 31.2208C19.5307 31.6959 20.081 32.0732 20.6897 32.33C21.2984 32.5869 21.9527 32.7179 22.6134 32.7153C23.5033 32.7118 24.377 32.4774 25.1491 32.0353C25.9212 31.5931 26.5652 30.9583 27.0183 30.1928L30.6138 32.5402C29.7706 33.925 28.5794 35.0652 27.1588 35.8476C25.7381 36.63 24.1374 37.0273 22.5155 37C21.2734 37.0184 20.0399 36.7898 18.887 36.3275C17.7341 35.8651 16.6846 35.1783 15.7997 34.3069C14.9148 33.4355 14.212 32.3969 13.7324 31.2516C13.2527 30.1063 13.0057 28.8771 13.0057 27.6356C13.0057 26.394 13.2527 25.1648 13.7324 24.0195C14.212 22.8742 14.9148 21.8357 15.7997 20.9643C16.6846 20.0929 17.7341 19.406 18.887 18.9437C20.0399 18.4813 21.2734 18.2527 22.5155 18.2711C24.144 18.2258 25.7555 18.612 27.1864 19.3904C28.6172 20.1688 29.8165 21.3118 30.6624 22.7033L26.978 25.1187C26.5475 24.3387 25.9153 23.6886 25.1475 23.2363C24.3797 22.784 23.5044 22.5461 22.6131 22.5475L22.6134 22.5474ZM63.0463 22.5474C62.3859 22.5454 61.7318 22.6769 61.1235 22.9339C60.5151 23.1909 59.9651 23.5681 59.5063 24.0429C59.0475 24.5177 58.6894 25.0803 58.4537 25.6969C58.2179 26.3134 58.1092 26.9713 58.1342 27.6309C58.1084 28.2907 58.2165 28.949 58.4519 29.566C58.6874 30.183 59.0454 30.746 59.5043 31.221C59.9633 31.6961 60.5137 32.0734 61.1224 32.3302C61.7311 32.587 62.3856 32.718 63.0463 32.7153C63.9361 32.7118 64.8097 32.4774 65.5817 32.0353C66.3536 31.5931 66.9976 30.9582 67.4505 30.1928L71.0467 32.5402C69.9688 34.2541 68.3615 35.5703 66.4682 36.2897C64.5749 37.0091 62.4986 37.0925 60.5536 36.5272C58.6087 35.9619 56.9009 34.7788 55.6889 33.1568C54.4769 31.5349 53.8266 29.5624 53.8364 27.5381C53.8462 25.5138 54.5157 23.5478 55.7434 21.9376C56.9711 20.3275 58.6903 19.161 60.6406 18.6146C62.591 18.0682 64.6664 18.1717 66.5526 18.9094C68.4389 19.6472 70.0333 20.979 71.0945 22.7033L67.4113 25.1187C66.9807 24.3388 66.3485 23.6887 65.5807 23.2364C64.8128 22.7841 63.9376 22.5462 63.0463 22.5474Z" fill="white"/>
+                </svg>                        
             </div>
-
-            <h2 class="footer__title"><span class="title--bold">circle k vietnam -</span> chuỗi cửa hàng tiện lợi - mở cửa 24/7</h2>
-
-            <div class="footer__infomation">
-                <div class="infomation__left">
-                    <ul>
-                        <li class="name">
-                            <span class="uppercase">công ty vòng tròn đỏ </span>
-                            - Giấy CNĐKDN: 0306182043
-                        </li>
-                        <li class="address">
-                            Địa chỉ: 160 Bùi Thị Xuân, phường Phạm Ngũ Lão, quận 1, Tp.Hồ Chí Minh, Việt Nam
-                        </li>
-                        <li class="hotline">
-                            Hotline: 1900 3110 (7:00-22:00)
-                        </li>
-                        <li class="email">
-                            Email: info@circle.com.vn
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="infomation__right">
-                    <ul>
-                        <li class="link--desktop">
-                            <img src="./images/footer/dathongbao.png" alt="">
-                        </li>
-                        <li class="link--qrcode">
-                            <img src="./images/footer/qr-code.png" alt="">
-                        </li>
-                        <li class="link--download">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <img src="./images/footer/app-store.png" alt="">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="./images/footer/google-play.png" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="link--mobile">
-                            <img src="./images/footer/dathongbao.png" alt="">
-                        </li>
-                    </ul>
-                </div>
+            <div class="form__followus">
+                <span class="highlight">theo dõi circle k</span>
+                <span class="nomal">Cập nhật ưu đã sớm nhất</span>
             </div>
-
-            <div class="footer__links">
+            <div class="form__email">
+                <input type="email" id="email" placeholder="Nhập email của bạn">
+                <a class="btn-submit">xác nhận</a>
+            </div>
+            <div class="form__social">
                 <ul>
                     <li>
-                    <a href="#">Giới thiệu</a> 
+                        <a href="">
+                            <span>
+                                <img src="./images/footer/facebook.png" alt="">
+                            </span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Cơ hội nghề nghiệp</a> 
+                        <a href="">
+                            <span>
+                                <img src="./images/footer/youtube.png" alt="">
+                            </span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Tin tức & sự kiện</a> 
-                    </li>
-                    <li>
-                        <a href="#">Liên hệ</a> 
-                    </li>
-                    <li>
-                        <a href="#">Điều khoản sử dụng</a> 
-                    </li>
-                    <li>
-                        <a href="#">Chính sách bảo mật</a> 
+                        <a href="">
+                            <span>
+                                <img src="./images/footer/email.png" alt="">
+                            </span>
+                        </a>
                     </li>
                 </ul>
-                <p>copyright © 2021 circle k vietnam</p>
             </div>
+        </div>
+
+        <h2 class="footer__title"><span class="title--bold">circle k vietnam -</span> chuỗi cửa hàng tiện lợi - mở cửa 24/7</h2>
+
+        <div class="footer__infomation">
+            <div class="infomation__left">
+                <ul>
+                    <li class="name">
+                        <span class="uppercase">công ty vòng tròn đỏ </span>- Giấy CNĐKDN: 0306182043
+                    </li>
+                    <li class="address">
+                        Địa chỉ: 160 Bùi Thị Xuân, phường Phạm Ngũ Lão, quận 1, Tp.Hồ Chí Minh, Việt Nam
+                    </li>
+                    <li class="hotline">
+                        Hotline: 1900 3110 (7:00-22:00)
+                    </li>
+                    <li class="email">
+                        Email: info@circle.com.vn
+                    </li>
+                </ul>
+            </div>
+
+            <div class="infomation__right">
+                <ul>
+                    <li class="link--authentic">
+                        <img src="./images/footer/dathongbao.png" alt="">
+                    </li>
+                    <li class="link--qrcode">
+                        <img src="./images/footer/qr-code.png" alt="">
+                    </li>
+                    <li class="link--download">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/footer/app-store.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/footer/google-play.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer__links">
+            <ul>
+                <li>
+                <a href="#">Giới thiệu</a> 
+                </li>
+                <li>
+                    <a href="#">Cơ hội nghề nghiệp</a> 
+                </li>
+                <li>
+                    <a href="#">Tin tức & sự kiện</a> 
+                </li>
+                <li>
+                    <a href="#">Liên hệ</a> 
+                </li>
+                <li>
+                    <a href="#">Điều khoản sử dụng</a> 
+                </li>
+                <li>
+                    <a href="#">Chính sách bảo mật</a> 
+                </li>
+            </ul>
+            <p>copyright © 2021 circle k vietnam</p>
         </div>
     </footer>
 
     <div class="side-control">
-        <ul class="list--vertical">
+        <ul>
             <li>
                 <button class="btn-icon">
-                    <img src="./images/side-option/clarity_phone-handset-line.png" alt="">
+                    <img src="./images/side-option/phone.png" alt="">
                 </button>
             </li>
             <li>
                 <button class="btn-icon">
-                    <img src="./images/side-option/bi_chat.png" alt="">
+                    <img src="./images/side-option/chat-icon.png" alt="">
                 </button>
             </li>
             <li>
-                <button class="btn-icon">
-                    <img src="./images/side-option/akar-icons_arrow-up.png" alt="">
+                <button class="btn-icon" onclick="gotop()">
+                    <img src="./images/side-option/go-up.png" alt="">
                 </button>
             </li>
         </ul>
