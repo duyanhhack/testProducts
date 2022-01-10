@@ -22,8 +22,12 @@
                     text-align: center;
                     margin-top: 8px;
                     .font-custom(@size: @font-s-big, @weight: @font-w-medium, @line-height: @line-height-overmedium);
+                    transition: all 0.3s;
                 }
                 &:hover {
+                    span:first-child {
+                        #btn(@bg: white, @border: 1px solid @primary-color, @width: 80px, @height: 80px, @radius: @radius-rounded);
+                    }
                     span:last-child {
                         .font-custom(@font-s-big, @font-w-medium, @primary-color, @line-height-overmedium);
                     }
@@ -53,6 +57,5 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-        transition: 0.3s;
     }
 }

@@ -27,8 +27,12 @@
                 text-align: center;
                 margin-top: 8px;
                 .font-custom(@size: @font-s-big, @weight: @font-w-medium, @line-height: @line-height-overmedium);
+                transition: all 0.3s;
             }
             &:hover {
+                span:first-child {
+                    border: 1px solid @primary-color
+                }
                 span:last-child {
                     .font-custom(@font-s-big, @font-weight-primary, @primary-color, @line-height-overmedium);
                 }
