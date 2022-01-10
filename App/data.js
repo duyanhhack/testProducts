@@ -23,13 +23,13 @@ Products = [
         price: 23000,
         image: "./images/products/xoi.png"
     },
-    // {
-    //     name: "Bia",
-    //     tag: '#drink, #beer',
-    //     // tag: '#beer',
-    //     price: 23000,
-    //     image: "./images/products/beer.png"
-    // },
+    {
+        name: "Bia",
+        tag: '#beer, #drink',
+        // tag: '#beer',
+        price: 23000,
+        image: "./images/products/beer.png"
+    },
     {
         name: "Trà sữa Thái (xanh)",
         tag: '#drink',

@@ -23,10 +23,10 @@ if(i<=4){
     const listProduct = document.getElementsByClassName('list__product') // return Array
     let x = 0;
     Products.forEach((product) => {
-        if(product.tag == '#food' && product.tag != '#beer'){
+        if(product.tag === '#food'){
             x = 0;
         }
-        else if (product.tag == '#drink' && product.tag != '#beer'){
+        else if (product.tag == '#drink'){
             x = 1;
         }
         listProduct[x].innerHTML +=
