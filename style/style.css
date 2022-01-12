@@ -413,6 +413,13 @@ h2 {
   display: flex;
   flex-direction: column;
 }
+.controlbar-mobile ul li a span {
+  font-weight: 600;
+  font-size: 9px;
+  color: #333333;
+  line-height: 10px;
+  margin-top: 5px;
+}
 .controlbar-mobile .circlek-club {
   position: absolute;
   top: -100px;
