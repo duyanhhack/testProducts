@@ -1,6 +1,20 @@
 @import "./style.less";
 
+.slider-top {
+    margin-top: 80px;
+}
 .slider-top, .slider-bottom {
+    position: relative;
+    .counter {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        z-index: 2;
+        padding: 4px 10px;
+        border-radius: @radius-normal;
+        background-color: rgba(255, 255, 255, 0.7);
+        .font-custom(@font-s-medium, @font-w-medium, @color-black-light, @line-height-small);
+    }
     .item a img {
         max-width: 100vw;
         width: 100%;
@@ -36,5 +50,11 @@
                 opacity: 1;
             }
         }
+    }
+}
+
+@media (max-width: 600px) {
+    .slider-top {
+        margin-top: 13px;
     }
 }
