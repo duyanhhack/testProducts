@@ -1,5 +1,3 @@
-@import "./style.less";
-
 footer {
     margin-top: 90px;
     padding: 90px 0 35px 0;
@@ -43,13 +41,13 @@ footer {
             margin-right: 20px;
         }
         .btn-submit {
-            #btn(@bg: @primary-color, @border: 1px solid @primary-color, @width: fit-content, @height: 40px, @padding: 0 30px);
-            .font-primary-white();
+            #btn-icon (@primary-color, 1px solid @primary-color, fit-content, 40px, 0 30px);
+            color: @color-white;
             text-transform: uppercase;
             transition: 0.3s;
             &:hover {
-                #btn(@bg: @color-white, @border: 1px solid @primary-color, @width: fit-content, @height: 40px, @padding: 0 30px);
-                .font-primary-red();
+                #btn-icon (@color-white, 1px solid @primary-color, fit-content, 40px, 0 30px);
+                color: @primary-color;
                 text-transform: uppercase;
                 transition: 0.3s;
             }
@@ -70,7 +68,7 @@ footer {
                     margin-right: 0;
                 }
                 span {
-                    #btn(@bg: @secondary-color, @width: 35px, @height: 35px, @radius: @radius-rounded);
+                    #btn-icon (@secondary-color, 1px solid @secondary-color, 35px, 35px);
                 }
             }
         }
@@ -164,13 +162,12 @@ footer {
     top: 50%;
     right: 50px;
     .btn-icon {
-        #btn(@bg: @color-white, @border: 1px solid @color-gray-light, @width: 40px, @height: 40px, @padding: 0, @margin: 0 0 15px 0, @radius: @radius-rounded);
+        #btn-icon(@bg: @color-white, @border: 1px solid @color-white, @width: 40px, @height: 40px);
+        margin: 0;
+        margin-bottom: 15px;
         &:hover {
-            #btn(@bg: @color-white, @border: 1px solid @primary-color, @width: 40px, @height: 40px, @padding: 0, @margin: 0 0 15px 0, @radius: @radius-rounded);
+            #btn-icon(@bg: @color-white, @border: 1px solid @primary-color, @width: 40px, @height: 40px);
         }
-    }
-    @media (max-width: 600px) {
-        display: none;
     }
 }
 
@@ -227,7 +224,7 @@ footer {
             }
             .btn-submit {
                 margin: 0;
-                min-width: 139px;
+                min-width: 140px;
                 margin-left: 20px;
             }
         }
@@ -279,6 +276,9 @@ footer {
 @media (max-width: 600px) {
     footer {
         padding-bottom: 110px;
+    }
+    .side-control {
+        display: none;
     }
 }
 @media (max-width: 500px) {

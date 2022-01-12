@@ -47,10 +47,11 @@
 }
 
 .btn-more-products {
-    #btn(@bg: white, @border: 1px solid @primary-color, @width: fit-content, @height: 40px, @padding: 0 30px 0 30px);
-    .font-primary-red();
+    // #btn(@bg: white, @border: 1px solid @primary-color, @width: fit-content, @height: 40px, @padding: 0 30px 0 30px);
+    #btn-icon (@color-white, 1px solid @primary-color, fit-content, 40px, 0 30px 0 30px);
     margin-top: 40px;
     text-transform: uppercase;
+    color: @primary-color;
     .btn--img{
         background-image: url(../images/arrow-right.png);
         background-repeat: no-repeat;
@@ -58,10 +59,10 @@
     }
     transition: 0.3s;
     &:hover {
-        #btn(@bg: @primary-color, @border: 1px solid @primary-color, @width: fit-content, @height: 40px, @padding: 0 30px 0 30px);
-        .font-primary-white;
+        #btn-icon (@primary-color, 1px solid @primary-color, fit-content, 40px, 0 30px 0 30px);
         margin-top: 40px;
         text-transform: uppercase;
+        color: @color-white;
         .btn--img{
             background-image: url(../images/arrow-right-white.png);
             background-repeat: no-repeat;

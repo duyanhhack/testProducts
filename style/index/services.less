@@ -14,7 +14,7 @@
                 flex-direction: column;
                 transition: 0.3s;
                 span:first-child {
-                    #btn(@bg: white, @width: 80px, @height: 80px, @radius: @radius-rounded);
+                    #btn-icon(@bg: @color-white, @width: 80px, @height:80px, @border: none);
                     .shadow-box(0px 0px 10px rgba(0, 0, 0, 0.1));
                     transition: 0.3s
                 }
@@ -23,14 +23,13 @@
                     text-align: center;
                     margin-top: 8px;
                     .font-custom(@size: @font-s-big, @weight: @font-w-medium, @line-height: @line-height-overmedium);
-                    transition: all 0.3s;
                 }
                 &:hover {
                     span:first-child {
                         .shadow-box(0px 0px 15px rgba(0, 0, 0, 0.2));
                     }
                     span:last-child {
-                        .font-custom(@font-s-big, @font-w-medium, @primary-color, @line-height-overmedium);
+                        .font-custom(@font-s-big, @font-weight-primary, @primary-color, @line-height-overmedium);
                     }
                 }
             }
@@ -38,9 +37,9 @@
     }
 }
 .btn-more-service {
-    #btn(@bg: @primary-color, @border: 1px solid @primary-color, @width: fit-content, @height: 40px, @padding: 0 30px 0 30px);
-    .font-primary-white();
+    #btn-icon (@primary-color, 1px solid @primary-color, fit-content, 40px, 0 30px 0 30px);
     margin-top: 10px;
+    color: @color-white;
     text-transform: uppercase;
     .btn--img{
         background-image: url(../images/arrow-right-white.png);
@@ -49,8 +48,8 @@
     }
     transition: 0.3s;
     &:hover {
-        #btn(@bg: @color-white, @border: 1px solid @primary-color, @width: fit-content, @height: 40px, @padding: 0 30px 0 30px);
-        .font-primary-red();
+        #btn-icon (@color-white, 1px solid @primary-color, fit-content, 40px, 0 30px 0 30px);
+        color: @primary-color;
         margin-top: 10px;
         text-transform: uppercase;
         .btn--img{
@@ -91,6 +90,7 @@
             justify-content: space-between;
             li {
                 min-width: 85px;
+                transition: all 0.3s;
                 a {
                     span:first-child {
                         width: 60px;
@@ -103,6 +103,13 @@
                     span:last-child {
                         font-size: @font-s-small;
                         line-height: 14px;
+                    }
+                }
+                &:hover {
+                    a {
+                        span:last-child {
+                            .font-custom(@font-s-small, @font-weight-primary, @primary-color, 14px);
+                        }
                     }
                 }
             }

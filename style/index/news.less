@@ -17,8 +17,8 @@
     }
 }
 .btn-more-news {
-    #btn(@bg: @color-white, @border: 1px solid @primary-color, @width: fit-content, @height: 40px, @padding: 0 30px 0 30px);
-    .font-primary-red();
+    #btn-icon (@color-white, 1px solid @primary-color, fit-content, 40px, 0 30px 0 30px);
+    color: @primary-color;
     margin-top: 40px;
     text-transform: uppercase;
     .btn--img{
@@ -28,8 +28,8 @@
     }
     transition: 0.3s;
     &:hover {
-        #btn(@bg: @primary-color, @border: 1px solid @primary-color, @width: fit-content, @height: 40px, @padding: 0 30px 0 30px);
-        .font-primary-white();
+        #btn-icon (@primary-color, 1px solid @primary-color, fit-content, 40px, 0 30px 0 30px);
+        color: @color-white;
         margin-top: 40px;
         text-transform: uppercase;
         .btn--img{

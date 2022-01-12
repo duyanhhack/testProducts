@@ -1,34 +1,32 @@
 @import "./variables.less";
 
-.font-custom(@size: @font-s-medium, @weight: @font-w-medium, @color: @color-black, @line-height: @line-height-small) {
-    font-weight: @weight;
+.font-custom(@size: auto, @weight: auto, @color: @color-black-light, @line-height: 10px) {
     font-size: @size;
+    font-weight: @weight;
     color: @color;
     line-height: @line-height;
 }
-.font-primary-red{
-    .font-custom(@font-size-primary, @font-weight-primary, @primary-color);
-}
-.font-primary-black {
-    .font-custom(@font-size-primary, @font-weight-primary, @color-black);
-}
-.font-primary-white {
-    .font-custom(@font-size-primary, @font-weight-primary, @color-white);
-}
 
-#btn(@bg: none, @border: none, @width: auto, @height: auto, @padding: auto, @margin: auto, @radius: @radius-normal) {
+#btn-icon (@bg, @border, @width, @height, @padding: auto) {
+    cursor: pointer;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: @bg;
-    border: @border;
-    border-radius: @radius;
-    padding: @padding;
-    margin: @margin;
     width: @width;
     height: @height;
-    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: @border;
+    border-radius: @radius-rounded;
+    background: @bg;
+    padding: @padding;
+    transition: all 0.3s;
 }
+#btn-icon-hover (@border, @bg) {
+    &:hover {
+        border: @border;
+        background: @bg;
+    }
+}
+
 .shadow-box(@attributes: 0px 0px 10px rgba(0, 0, 0, 0.15)) {
     -webkit-box-shadow: @attributes;
     -moz-box-shadow: @attributes;
@@ -46,4 +44,30 @@
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
+}
+.input {
+    width: 240px;
+    height: 40px;
+    padding-left: 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: @radius-normal;
+    outline: none;
+    &::placeholder {
+        .font-custom(@font-s-medium, @font-w-medium, @color-black-light, 15px);
+    }
+}
+h2 {
+    .font-custom(@size: @font-s-biggest, @weight: @font-weight-primary, @line-height: 36px);
+    #title();
+}
+
+.btn--img{
+    display: block;
+    width: 14px;
+    height: 10px;
+    margin-left: 5px;
+}
+.title-cover {
+    border-bottom: 1px solid @secondary-color;
+    max-width: 1200px;
 }

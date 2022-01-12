@@ -24,7 +24,6 @@ moreBtn.addEventListener('click', () => {
 })
 
 $(document).ready(function() {
-
     $('.menu-mobile div input').focusin(function() {
         $('.logo__mobile').css('display', 'none')
         $('.logo__mobile--small').css('display', 'block')
